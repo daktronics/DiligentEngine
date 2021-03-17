@@ -17,6 +17,8 @@ option(DILIGENT_BUILD_SAMPLES "Build DiligentSamples module" ON)
 option(DILIGENT_BUILD_DEMOS "Build demo projects" ON)
 option(DILIGENT_BUILD_UNITY_PLUGIN "Build Unity plugin" ON)
 
+include(../gCaminoNext/DE_NextGen/ThirdParty/vcpkg/scripts/buildsystems/vcpkg.cmake)
+
 add_subdirectory(DiligentCore)
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/DiligentCorePro")
     add_subdirectory(DiligentCorePro)
